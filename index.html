@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="index.js"></script>
+</head>
+
+<body>
+    <div id="login-area">
+        <h1>Login To Your Candles.com Account</h1>
+        <p>Securely login to your candles.com account
+            via the browser and sniff your favorite types
+            of candles online before ordering.
+        </p>
+
+        <form id="login-form">
+            <div>
+                <label for="firstname" id="firstname-label">Firstname:</label>
+                <input name="firstname" id="firstname-input" type="text" pattern="^[A-Z]?[a-z]+$" maxlength="20"
+                    required>
+            </div>
+
+            <div>
+                <label for="Lastname" id="lastname-label">Lastname:</label>
+                <input name="lastname" id="lastname-input" type="text" pattern="^[A-Z]?[a-z]+$" maxlength="20" required>
+            </div>
+
+            <div>
+                <label for="email" id="email-label">Email:</label>
+                <input name="email" id="email-input" type="email" pattern="^[a-z0-9]+@[a-z]+\.[a-z]+$" maxlength="40"
+                    required>
+            </div>
+
+            <div>
+                <label for="password" id="password-label">Password:</label>
+                <input name="password" id="password-input" type="password" minlength="10" maxlength="100" required>
+            </div>
+
+            <button type="submit" id="login-button">Log In</button>
+        </form>
+        <a href="#" id="forgot-password-link">Forgot Password?</a>
+        <div id="forgot-password-area"></div>
+    </div>
+</body>
+
+</html>
